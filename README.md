@@ -2,7 +2,7 @@
 A multi-world plugin for TShock. It forward all packets from some players to `game server`.  
 Use `/sv [name]` to switch to different world.  
 Permission for using `/sv` is `chireiden.stellaria.use`.  
-【作者：Stellaria，兼容+修改+翻译：Leader】.  
+【作者：Stargazing，兼容+修改+翻译：Leader】.  
 【原项目地址:https://github.com/sgkoishi/Stellaria】.  
 一个为TShock编写的多世界插件.它将转发用户和目标服务器间的所有数据包.  
 使用'/world 世界名字'传送至不同世界.  
@@ -44,7 +44,7 @@ By default, a config file will be created.
 * "OnLeave":未开发。  
 * "GlobalCommands":这些指令会被主服务器处理，甚至当玩家传送至其他服务器时。  
 
-#### Sample config【配置文件示例】
+#### Sample config【配置文件示例】 
 主服务器，端口7776，名字为wrapper【原端口为7777，可能是恋佬填错了？】.  
 Server 7776 (Wrapper):
 
