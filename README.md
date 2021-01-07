@@ -1,16 +1,16 @@
 # Stellaria
 A multi-world plugin for TShock. It forward all packets from some players to `game server`.  
 Use `/sv [name]` to switch to different world.  
-Permission for using `/sv` is `chireiden.stellaria.use`.
-【作者：Stellaria，兼容+修改+翻译：Leader】.
-【原项目地址:https://github.com/sgkoishi/Stellaria】.
-一个为TShock编写的多世界插件.它将转发用户和目标服务器间的所有数据包.
-使用'/world 世界名字'传送至不同世界.
-使用'/world'指令的权限是'chireiden.stellaria.use.
-【新增部分：使用'/reload'指令重载配置文件】.
-【已知bug1：偶尔会在跳转服务器时失败，目标服务器端显示：指定的操作无效，解决办法：重新进入/减少跳转次数】.
-【已知bug2:多次跳转后可能出现区块，人物显示错误问题，解决方法同上】.
-【已知bug3:传送至目标服务器后未传送至指定坐标，原因：网络延迟？】.
+Permission for using `/sv` is `chireiden.stellaria.use`.  
+【作者：Stellaria，兼容+修改+翻译：Leader】.  
+【原项目地址:https://github.com/sgkoishi/Stellaria】.  
+一个为TShock编写的多世界插件.它将转发用户和目标服务器间的所有数据包.  
+使用'/world 世界名字'传送至不同世界.  
+使用'/world'指令的权限是'chireiden.stellaria.use.  
+【新增部分：使用'/reload'指令重载配置文件】.  
+【已知bug1：偶尔会在跳转服务器时失败，目标服务器端显示：指定的操作无效，解决办法：重新进入/减少跳转次数】.  
+【已知bug2:多次跳转后可能出现区块，人物显示错误问题，解决方法同上】.  
+【已知bug3:传送至目标服务器后未传送至指定坐标，原因：网络延迟？】.  
 
 ### Config File
 By default, a config file will be created.  
@@ -28,17 +28,17 @@ By default, a config file will be created.
 * "OnLeave": Not implemented yet.  
 * "GlobalCommands": These commands will be handled by host server, even if they are forwarded.
 ###配置文件
-在开始时，一个配置文件将会被创建
-* "Host":如果是主服务器，填写"true"
+在开始时，一个配置文件将会被创建  
+* "Host":如果是主服务器，填写'true'
 *"Key":进入本服务器的私有密钥【文件创建时会自动生成，请勿修改】
  *密钥对于不同服务器可以是相同的【不清楚，未测试】
  *如果在文件主机的配置文件中密钥与目标服务器不同，玩家任然可以进入目标服务器，但目标服务器无法取得该玩家的真实IP
 *"Name":世界名字。玩家使用该名称进入目标服务器，所以请勿过于复杂。
- * **在配置文件的‘Servers’配置项中必须要有一个和‘Name’相同的服务器对象作为当前服务器**【在主服务器中，从服务器可忽略】
- *在‘Servers’配置项中的‘Name’必须是唯一的
+ * **在配置文件的'Servers'配置项中必须要有一个和'Name'相同的服务器对象作为当前服务器**【在主服务器中，从服务器可忽略】
+ *在'Servers'配置项中的'Name'必须是唯一的
 *"JoinBytes":这些字节是Terraria的版本信息。*不要修改除非游戏更新或者是特殊用户端。*
 *"Server":可用服务器列表。包括本服务器【主服务器中，从服务器此项为空】
-*"Permission":加入该世界所需的权限。、
+*"Permission":加入该世界所需的权限。
 *"OnEnter":未开发。
 *"OnLeave":未开发。
 *"GlobalCommands":这些指令会被主服务器处理，甚至当玩家传送至其他服务器时。
