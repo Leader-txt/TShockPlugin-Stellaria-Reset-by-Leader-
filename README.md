@@ -4,13 +4,13 @@ Use `/sv [name]` to switch to different world.
 Permission for using `/sv` is `chireiden.stellaria.use`.
 【作者：Stellaria，兼容+修改+翻译：Leader】.
 【原项目地址:https://github.com/sgkoishi/Stellaria】.
-一个为TShock编写的多世界插件.它将转发用户和目标服务器间的所有数据包。
-使用“/world 世界名字”传送至不同世界
-使用“/world”指令的权限是”chireiden.stellaria.use“。
-【新增部分：使用”reload“指令重载配置文件】
-【已知bug1：偶尔会在跳转服务器时失败，目标服务器端显示：指定的操作无效，解决办法：重新进入/减少跳转次数】
-【已知bug2:多次跳转后可能出现区块，人物显示错误问题，解决方法同上】
-【已知bug3:传送至目标服务器后未传送至指定坐标，原因：网络延迟？】
+一个为TShock编写的多世界插件.它将转发用户和目标服务器间的所有数据包.
+使用'/world 世界名字'传送至不同世界.
+使用'/world'指令的权限是'chireiden.stellaria.use.
+【新增部分：使用'/reload'指令重载配置文件】.
+【已知bug1：偶尔会在跳转服务器时失败，目标服务器端显示：指定的操作无效，解决办法：重新进入/减少跳转次数】.
+【已知bug2:多次跳转后可能出现区块，人物显示错误问题，解决方法同上】.
+【已知bug3:传送至目标服务器后未传送至指定坐标，原因：网络延迟？】.
 
 ### Config File
 By default, a config file will be created.  
@@ -44,8 +44,9 @@ By default, a config file will be created.
 *"GlobalCommands":这些指令会被主服务器处理，甚至当玩家传送至其他服务器时。
 
 #### Sample config【配置文件示例】
+主服务器，端口7776，名字为wrapper【原端口为7777，可能是恋佬填错了？】.
 Server 7776 (Wrapper):
-主服务器，端口7776，名字为wrapper【原端口为7777，可能是恋佬填错了？】
+
     {
       "Host": true,//【是否为主机】
       "Key": "kisvK7HS+svZVdlzan4RZ072OdC1gNpIoOy56Uao6ZU=", // Key 1, random generated【密钥1，随机生成】
@@ -117,6 +118,7 @@ Server 7776 (Wrapper):
 
 //【此处在从机中填写,从机无需填写'Servers'配置项】
 Server 7777 (Lobby):
+
     {
       "Host": false,
       "Key": "aAdgfl52k8OamHRtrWsvbhJMXlcT6dhF9PuLur91mEA=",
