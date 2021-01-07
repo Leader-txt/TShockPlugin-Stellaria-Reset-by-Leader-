@@ -30,6 +30,7 @@ namespace Chireiden.Stellaria
         public override string Name => "Stellaria , reset by Leader";
         public override Version Version => Assembly.GetExecutingAssembly().GetName().Version;
         public override string Description => "In-game multi world plugin";
+        byte[] joinbytes=null;
 
         public override void Initialize()
         {
@@ -92,7 +93,7 @@ namespace Chireiden.Stellaria
                     // Construct:
                     // Packet id (1 byte)      1,
                     // String length (1 byte)  11,
-                    // "Terraria194"           84, 101, 114, 114, 97, 114, 105, 97, 50, 51, 48
+                    // "Terraria230":           84, 101, 114, 114, 97, 114, 105, 97, 50, 51, 48
                     JoinBytes = new byte[] {1, 11, 84, 101, 114, 114, 97, 114, 105, 97, 50, 51, 48},
                     Key = key,
                     Name = "lobby"
@@ -399,7 +400,7 @@ namespace Chireiden.Stellaria
             bw.Write((byte)1);
             bw.Write((string)"Terraria230");*/
             bw.Write((short) (15 + _config.Key.Length + 1 + args.Player.IP.Length));
-            bw.Write(_config.JoinBytes);
+            bw.Write(joinbytes);
             bw.Write(newWorld.Key);
             bw.Write(args.Player.IP);
             tc.Client.Send(ms.ToArray());
@@ -420,6 +421,14 @@ namespace Chireiden.Stellaria
             {
                 if (packetid == 1)
                 {
+                    if (joinbytes == null)
+                    {
+                        joinbytes = new byte[13];
+                        for(int i = start; i < start + 13; i++)
+                        {
+                            joinbytes[i - start] = buffer.readBuffer[i];
+                        }
+                    }
                     _forward[buffer.whoAmI] = new ForwardPlayer { Server = Server.Current };
                     if (length <= 15)
                     {
