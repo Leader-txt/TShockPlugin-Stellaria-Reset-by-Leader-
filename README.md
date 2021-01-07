@@ -26,25 +26,26 @@ By default, a config file will be created.
 * "Permission": Permission required to join to this world.  
 * "OnEnter": Not implemented yet.  
 * "OnLeave": Not implemented yet.  
-* "GlobalCommands": These commands will be handled by host server, even if they are forwarded.
+* "GlobalCommands": These commands will be handled by host server, even if they are forwarded.  
+
 ###配置文件
 在开始时，一个配置文件将会被创建  
-* "Host":如果是主服务器，填写'true'
-*"Key":进入本服务器的私有密钥【文件创建时会自动生成，请勿修改】
- *密钥对于不同服务器可以是相同的【不清楚，未测试】
- *如果在文件主机的配置文件中密钥与目标服务器不同，玩家任然可以进入目标服务器，但目标服务器无法取得该玩家的真实IP
-*"Name":世界名字。玩家使用该名称进入目标服务器，所以请勿过于复杂。
- * **在配置文件的'Servers'配置项中必须要有一个和'Name'相同的服务器对象作为当前服务器**【在主服务器中，从服务器可忽略】
- *在'Servers'配置项中的'Name'必须是唯一的
-*"JoinBytes":这些字节是Terraria的版本信息。*不要修改除非游戏更新或者是特殊用户端。*
-*"Server":可用服务器列表。包括本服务器【主服务器中，从服务器此项为空】
-*"Permission":加入该世界所需的权限。
-*"OnEnter":未开发。
-*"OnLeave":未开发。
-*"GlobalCommands":这些指令会被主服务器处理，甚至当玩家传送至其他服务器时。
+* "Host":如果是主服务器，填写'true'  
+*"Key":进入本服务器的私有密钥【文件创建时会自动生成，请勿修改】  
+ *密钥对于不同服务器可以是相同的【不清楚，未测试】  
+ *如果在文件主机的配置文件中密钥与目标服务器不同，玩家任然可以进入目标服务器，但目标服务器无法取得该玩家的真实IP  
+*"Name":世界名字。玩家使用该名称进入目标服务器，所以请勿过于复杂。  
+ * **在配置文件的'Servers'配置项中必须要有一个和'Name'相同的服务器对象作为当前服务器**【在主服务器中，从服务器可忽略】   
+ *在'Servers'配置项中的'Name'必须是唯一的  
+*"JoinBytes":这些字节是Terraria的版本信息。*不要修改除非游戏更新或者是特殊用户端。*  
+*"Server":可用服务器列表。包括本服务器【主服务器中，从服务器此项为空】  
+*"Permission":加入该世界所需的权限。  
+*"OnEnter":未开发。  
+*"OnLeave":未开发。  
+*"GlobalCommands":这些指令会被主服务器处理，甚至当玩家传送至其他服务器时。  
 
 #### Sample config【配置文件示例】
-主服务器，端口7776，名字为wrapper【原端口为7777，可能是恋佬填错了？】.
+主服务器，端口7776，名字为wrapper【原端口为7777，可能是恋佬填错了？】.  
 Server 7776 (Wrapper):
 
     {
