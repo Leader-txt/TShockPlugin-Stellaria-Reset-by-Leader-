@@ -28,7 +28,7 @@ By default, a config file will be created.
 * "OnLeave": Not implemented yet.  
 * "GlobalCommands": These commands will be handled by host server, even if they are forwarded.  
 
-####配置文件  
+### 配置文件  
 在开始时，一个配置文件将会被创建  
 * "Host":如果是主服务器，填写'true'  
 * "Key":进入本服务器的私有密钥【文件创建时会自动生成，请勿修改】   
@@ -44,7 +44,7 @@ By default, a config file will be created.
 * "OnLeave":未开发。  
 * "GlobalCommands":这些指令会被主服务器处理，甚至当玩家传送至其他服务器时。  
 
-##### Sample config【配置文件示例】  
+#### Sample config【配置文件示例】  
 主服务器，端口7776，名字为wrapper【原端口为7777，可能是恋佬填错了？】.  
 Server 7776 (Wrapper):  
 
