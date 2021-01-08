@@ -46,14 +46,14 @@ By default, a config file will be created.
 
 #### Sample config【配置文件示例】
 主服务器，端口7776，名字为wrapper【原端口为7777，可能是恋佬填错了？】.
-Server 7776 (Wrapper):
+Server 7776 (Wrapper):  
 
- {
-   "Host": true,//【是否为主机】
+ {  
+   "Host": true,//【是否为主机】  
    "Key": "kisvK7HS+svZVdlzan4RZ072OdC1gNpIoOy56Uao6ZU=", // Key 1, random generated【密钥1，随机生成】
-   "Name": "wrapper", // Name 1【名字1】
+   "Name": "wrapper", // Name 1【名字1】  
    "JoinBytes": "AQtUZXJyYXJpYTE5NA==",//【加入代码，！不要复制此处的代码，使用自动生成的代码！】
-   "Servers": [//【主机必须填写】
+   "Servers": [//【主机必须填写】  
  {
    "Address": "127.0.0.1",//【IP地址】
    "Port": 7776,//【端口】
@@ -138,12 +138,12 @@ Server 7778 (Game Server 1):
 "Servers": []
 }
 
-Server 7779 (Game Server 2):
+Server 7779 (Game Server 2):  
 
-{
-"Host": false,
-"Key": "LJ7zd/hZ3WpaKloWEYRS3dsIl2F99wNNoFkJQ8leKCg=",
-"Name": "game2",
-"JoinBytes": "AQtUZXJyYXJpYTE5NA==",
-"Servers": []
-}
+{  
+"Host": false,  
+"Key": "LJ7zd/hZ3WpaKloWEYRS3dsIl2F99wNNoFkJQ8leKCg=",  
+"Name": "game2",  
+"JoinBytes": "AQtUZXJyYXJpYTE5NA==",  
+"Servers": []  
+}  
