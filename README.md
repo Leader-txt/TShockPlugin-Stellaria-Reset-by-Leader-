@@ -48,18 +48,18 @@ By default, a config file will be created.
 主服务器，端口7776，名字为wrapper【原端口为7777，可能是恋佬填错了？】.
 Server 7776 (Wrapper):
 
-{
-"Host": true,//【是否为主机】
-"Key": "kisvK7HS+svZVdlzan4RZ072OdC1gNpIoOy56Uao6ZU=", // Key 1, random generated【密钥1，随机生成】
-"Name": "wrapper", // Name 1【名字1】
-"JoinBytes": "AQtUZXJyYXJpYTE5NA==",//【加入代码，！不要复制此处的代码，使用自动生成的代码！】
-"Servers": [//【主机必须填写】
-{
-"Address": "127.0.0.1",//【IP地址】
-"Port": 7776,//【端口】
-"Name": "wrapper",//【名称】
-"Permission": "",//【加入所需的权限】
-"OnEnter": [],//【这里不用管】
+ {
+   "Host": true,//【是否为主机】
+   "Key": "kisvK7HS+svZVdlzan4RZ072OdC1gNpIoOy56Uao6ZU=", // Key 1, random generated【密钥1，随机生成】
+   "Name": "wrapper", // Name 1【名字1】
+   "JoinBytes": "AQtUZXJyYXJpYTE5NA==",//【加入代码，！不要复制此处的代码，使用自动生成的代码！】
+   "Servers": [//【主机必须填写】
+ {
+   "Address": "127.0.0.1",//【IP地址】
+   "Port": 7776,//【端口】
+   "Name": "wrapper",//【名称】
+   "Permission": "",//【加入所需的权限】
+   "OnEnter": [],//【这里不用管】
 "OnLeave": [],//【同上】
 "GlobalCommands": [//【由主机处理的命令】
 "sv",
@@ -120,13 +120,13 @@ Server 7776 (Wrapper):
 //【此处在从机中填写,从机无需填写'Servers'配置项】
 Server 7777 (Lobby):
 
-{
-"Host": false,
-"Key": "aAdgfl52k8OamHRtrWsvbhJMXlcT6dhF9PuLur91mEA=",
-"Name": "lobby",
-"JoinBytes": "AQtUZXJyYXJpYTE5NA==",
-"Servers": []
-}
+ {
+  "Host": false,
+  "Key": "aAdgfl52k8OamHRtrWsvbhJMXlcT6dhF9PuLur91mEA=",
+  "Name": "lobby",
+  "JoinBytes": "AQtUZXJyYXJpYTE5NA==",
+  "Servers": []
+ }
 
 Server 7778 (Game Server 1):
 
