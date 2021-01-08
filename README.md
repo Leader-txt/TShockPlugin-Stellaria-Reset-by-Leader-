@@ -120,13 +120,13 @@ Server 7776 (Wrapper):
 //【此处在从机中填写,从机无需填写'Servers'配置项】
 Server 7777 (Lobby):  
 
- {  
+{  
   "Host": false,  
   "Key": "aAdgfl52k8OamHRtrWsvbhJMXlcT6dhF9PuLur91mEA=",  
   "Name": "lobby",  
   "JoinBytes": "AQtUZXJyYXJpYTE5NA==",  
   "Servers": []  
- }  
+}  
 
 Server 7778 (Game Server 1):
 
