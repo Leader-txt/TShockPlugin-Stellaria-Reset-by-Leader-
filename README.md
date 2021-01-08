@@ -2,15 +2,15 @@
 A multi-world plugin for TShock. It forward all packets from some players to `game server`.  
 Use `/sv [name]` to switch to different world.  
 Permission for using `/sv` is `chireiden.stellaria.use`.  
-¡¾×÷Õß£ºStellaria£¬¼æÈÝ+ÐÞ¸Ä+·­Òë£ºLeader¡¿.  
-¡¾Ô­ÏîÄ¿µØÖ·:https://github.com/sgkoishi/Stellaria¡¿.  
-Ò»¸öÎªTShock±àÐ´µÄ¶àÊÀ½ç²å¼þ.Ëü½«×ª·¢ÓÃ»§ºÍÄ¿±ê·þÎñÆ÷¼äµÄËùÓÐÊý¾Ý°ü.  
-Ê¹ÓÃ'/world ÊÀ½çÃû×Ö'´«ËÍÖÁ²»Í¬ÊÀ½ç.  
-Ê¹ÓÃ'/world'Ö¸ÁîµÄÈ¨ÏÞÊÇ'chireiden.stellaria.use'.  
-¡¾ÐÂÔö²¿·Ö£ºÊ¹ÓÃ'/reload'Ö¸ÁîÖØÔØÅäÖÃÎÄ¼þ¡¿.  
-¡¾ÒÑÖªbug1£ºÅ¼¶û»áÔÚÌø×ª·þÎñÆ÷Ê±Ê§°Ü£¬Ä¿±ê·þÎñÆ÷¶ËÏÔÊ¾£ºÖ¸¶¨µÄ²Ù×÷ÎÞÐ§£¬½â¾ö°ì·¨£ºÖØÐÂ½øÈë/¼õÉÙÌø×ª´ÎÊý¡¿.  
-¡¾ÒÑÖªbug2:¶à´ÎÌø×ªºó¿ÉÄÜ³öÏÖÇø¿é£¬ÈËÎïÏÔÊ¾´íÎóÎÊÌâ£¬½â¾ö·½·¨Í¬ÉÏ¡¿.  
-¡¾ÒÑÖªbug3:´«ËÍÖÁÄ¿±ê·þÎñÆ÷ºóÎ´´«ËÍÖÁÖ¸¶¨×ø±ê£¬Ô­Òò£ºÍøÂçÑÓ³Ù£¿¡¿.  
+ã€ä½œè€…ï¼šStellariaï¼Œå…¼å®¹+ä¿®æ”¹+ç¿»è¯‘ï¼šLeaderã€‘.  
+ã€åŽŸé¡¹ç›®åœ°å€:https://github.com/sgkoishi/Stellariaã€‘.  
+ä¸€ä¸ªä¸ºTShockç¼–å†™çš„å¤šä¸–ç•Œæ’ä»¶.å®ƒå°†è½¬å‘ç”¨æˆ·å’Œç›®æ ‡æœåŠ¡å™¨é—´çš„æ‰€æœ‰æ•°æ®åŒ….  
+ä½¿ç”¨'/world ä¸–ç•Œåå­—'ä¼ é€è‡³ä¸åŒä¸–ç•Œ.  
+ä½¿ç”¨'/world'æŒ‡ä»¤çš„æƒé™æ˜¯'chireiden.stellaria.use'.  
+ã€æ–°å¢žéƒ¨åˆ†ï¼šä½¿ç”¨'/reload'æŒ‡ä»¤é‡è½½é…ç½®æ–‡ä»¶ã€‘.  
+ã€å·²çŸ¥bug1ï¼šå¶å°”ä¼šåœ¨è·³è½¬æœåŠ¡å™¨æ—¶å¤±è´¥ï¼Œç›®æ ‡æœåŠ¡å™¨ç«¯æ˜¾ç¤ºï¼šæŒ‡å®šçš„æ“ä½œæ— æ•ˆï¼Œè§£å†³åŠžæ³•ï¼šé‡æ–°è¿›å…¥/å‡å°‘è·³è½¬æ¬¡æ•°ã€‘.  
+ã€å·²çŸ¥bug2:å¤šæ¬¡è·³è½¬åŽå¯èƒ½å‡ºçŽ°åŒºå—ï¼Œäººç‰©æ˜¾ç¤ºé”™è¯¯é—®é¢˜ï¼Œè§£å†³æ–¹æ³•åŒä¸Šã€‘.  
+ã€å·²çŸ¥bug3:ä¼ é€è‡³ç›®æ ‡æœåŠ¡å™¨åŽæœªä¼ é€è‡³æŒ‡å®šåæ ‡ï¼ŒåŽŸå› ï¼šç½‘ç»œå»¶è¿Ÿï¼Ÿã€‘.  
 
 ### Config File
 By default, a config file will be created.  
@@ -28,46 +28,46 @@ By default, a config file will be created.
 * "OnLeave": Not implemented yet.  
 * "GlobalCommands": These commands will be handled by host server, even if they are forwarded.  
 
-###ÅäÖÃÎÄ¼þ  
-ÔÚ¿ªÊ¼Ê±£¬Ò»¸öÅäÖÃÎÄ¼þ½«»á±»´´½¨  
-* "Host":Èç¹ûÊÇÖ÷·þÎñÆ÷£¬ÌîÐ´'true'  
-* "Key":½øÈë±¾·þÎñÆ÷µÄË½ÓÐÃÜÔ¿¡¾ÎÄ¼þ´´½¨Ê±»á×Ô¶¯Éú³É£¬ÇëÎðÐÞ¸Ä¡¿   
-* ÃÜÔ¿¶ÔÓÚ²»Í¬·þÎñÆ÷¿ÉÒÔÊÇÏàÍ¬µÄ¡¾²»Çå³þ£¬Î´²âÊÔ¡¿  
-* Èç¹ûÔÚÎÄ¼þÖ÷»úµÄÅäÖÃÎÄ¼þÖÐÃÜÔ¿ÓëÄ¿±ê·þÎñÆ÷²»Í¬£¬Íæ¼ÒÈÎÈ»¿ÉÒÔ½øÈëÄ¿±ê·þÎñÆ÷£¬µ«Ä¿±ê·þÎñÆ÷ÎÞ·¨È¡µÃ¸ÃÍæ¼ÒµÄÕæÊµIP  
-* "Name":ÊÀ½çÃû×Ö¡£Íæ¼ÒÊ¹ÓÃ¸ÃÃû³Æ½øÈëÄ¿±ê·þÎñÆ÷£¬ËùÒÔÇëÎð¹ýÓÚ¸´ÔÓ¡£  
-* **ÔÚÅäÖÃÎÄ¼þµÄ'Servers'ÅäÖÃÏîÖÐ±ØÐëÒªÓÐÒ»¸öºÍ'Name'ÏàÍ¬µÄ·þÎñÆ÷¶ÔÏó×÷Îªµ±Ç°·þÎñÆ÷**¡¾ÔÚÖ÷·þÎñÆ÷ÖÐ£¬´Ó·þÎñÆ÷¿ÉºöÂÔ¡¿  
-* ÔÚ'Servers'ÅäÖÃÏîÖÐµÄ'Name'±ØÐëÊÇÎ¨Ò»µÄ.  
-* "JoinBytes":ÕâÐ©×Ö½ÚÊÇTerrariaµÄ°æ±¾ÐÅÏ¢¡£*²»ÒªÐÞ¸Ä³ý·ÇÓÎÏ·¸üÐÂ»òÕßÊÇÌØÊâÓÃ»§¶Ë¡£*  
-* "Server":¿ÉÓÃ·þÎñÆ÷ÁÐ±í¡£°üÀ¨±¾·þÎñÆ÷¡¾Ö÷·þÎñÆ÷ÖÐ£¬´Ó·þÎñÆ÷´ËÏîÎª¿Õ¡¿  
-* "Permission":¼ÓÈë¸ÃÊÀ½çËùÐèµÄÈ¨ÏÞ¡£  
-* "OnEnter":Î´¿ª·¢¡£  
-* "OnLeave":Î´¿ª·¢¡£  
-* "GlobalCommands":ÕâÐ©Ö¸Áî»á±»Ö÷·þÎñÆ÷´¦Àí£¬ÉõÖÁµ±Íæ¼Ò´«ËÍÖÁÆäËû·þÎñÆ÷Ê±¡£  
+####é…ç½®æ–‡ä»¶  
+åœ¨å¼€å§‹æ—¶ï¼Œä¸€ä¸ªé…ç½®æ–‡ä»¶å°†ä¼šè¢«åˆ›å»º  
+* "Host":å¦‚æžœæ˜¯ä¸»æœåŠ¡å™¨ï¼Œå¡«å†™'true'  
+* "Key":è¿›å…¥æœ¬æœåŠ¡å™¨çš„ç§æœ‰å¯†é’¥ã€æ–‡ä»¶åˆ›å»ºæ—¶ä¼šè‡ªåŠ¨ç”Ÿæˆï¼Œè¯·å‹¿ä¿®æ”¹ã€‘   
+* å¯†é’¥å¯¹äºŽä¸åŒæœåŠ¡å™¨å¯ä»¥æ˜¯ç›¸åŒçš„ã€ä¸æ¸…æ¥šï¼Œæœªæµ‹è¯•ã€‘  
+* å¦‚æžœåœ¨æ–‡ä»¶ä¸»æœºçš„é…ç½®æ–‡ä»¶ä¸­å¯†é’¥ä¸Žç›®æ ‡æœåŠ¡å™¨ä¸åŒï¼ŒçŽ©å®¶ä»»ç„¶å¯ä»¥è¿›å…¥ç›®æ ‡æœåŠ¡å™¨ï¼Œä½†ç›®æ ‡æœåŠ¡å™¨æ— æ³•å–å¾—è¯¥çŽ©å®¶çš„çœŸå®žIP  
+* "Name":ä¸–ç•Œåå­—ã€‚çŽ©å®¶ä½¿ç”¨è¯¥åç§°è¿›å…¥ç›®æ ‡æœåŠ¡å™¨ï¼Œæ‰€ä»¥è¯·å‹¿è¿‡äºŽå¤æ‚ã€‚  
+* **åœ¨é…ç½®æ–‡ä»¶çš„'Servers'é…ç½®é¡¹ä¸­å¿…é¡»è¦æœ‰ä¸€ä¸ªå’Œ'Name'ç›¸åŒçš„æœåŠ¡å™¨å¯¹è±¡ä½œä¸ºå½“å‰æœåŠ¡å™¨**ã€åœ¨ä¸»æœåŠ¡å™¨ä¸­ï¼Œä»ŽæœåŠ¡å™¨å¯å¿½ç•¥ã€‘  
+* åœ¨'Servers'é…ç½®é¡¹ä¸­çš„'Name'å¿…é¡»æ˜¯å”¯ä¸€çš„.  
+* "JoinBytes":è¿™äº›å­—èŠ‚æ˜¯Terrariaçš„ç‰ˆæœ¬ä¿¡æ¯ã€‚*ä¸è¦ä¿®æ”¹é™¤éžæ¸¸æˆæ›´æ–°æˆ–è€…æ˜¯ç‰¹æ®Šç”¨æˆ·ç«¯ã€‚*  
+* "Server":å¯ç”¨æœåŠ¡å™¨åˆ—è¡¨ã€‚åŒ…æ‹¬æœ¬æœåŠ¡å™¨ã€ä¸»æœåŠ¡å™¨ä¸­ï¼Œä»ŽæœåŠ¡å™¨æ­¤é¡¹ä¸ºç©ºã€‘  
+* "Permission":åŠ å…¥è¯¥ä¸–ç•Œæ‰€éœ€çš„æƒé™ã€‚  
+* "OnEnter":æœªå¼€å‘ã€‚  
+* "OnLeave":æœªå¼€å‘ã€‚  
+* "GlobalCommands":è¿™äº›æŒ‡ä»¤ä¼šè¢«ä¸»æœåŠ¡å™¨å¤„ç†ï¼Œç”šè‡³å½“çŽ©å®¶ä¼ é€è‡³å…¶ä»–æœåŠ¡å™¨æ—¶ã€‚  
 
-#### Sample config¡¾ÅäÖÃÎÄ¼þÊ¾Àý¡¿  
-Ö÷·þÎñÆ÷£¬¶Ë¿Ú7776£¬Ãû×ÖÎªwrapper¡¾Ô­¶Ë¿ÚÎª7777£¬¿ÉÄÜÊÇÁµÀÐÌî´íÁË£¿¡¿.  
+##### Sample configã€é…ç½®æ–‡ä»¶ç¤ºä¾‹ã€‘  
+ä¸»æœåŠ¡å™¨ï¼Œç«¯å£7776ï¼Œåå­—ä¸ºwrapperã€åŽŸç«¯å£ä¸º7777ï¼Œå¯èƒ½æ˜¯æ‹ä½¬å¡«é”™äº†ï¼Ÿã€‘.  
 Server 7776 (Wrapper):  
 
     {  
-     "Host": true,//¡¾ÊÇ·ñÎªÖ÷»ú¡¿  
-     "Key": "kisvK7HS+svZVdlzan4RZ072OdC1gNpIoOy56Uao6ZU=", // Key 1, random generated¡¾ÃÜÔ¿1£¬Ëæ»úÉú³É¡¿
-     "Name": "wrapper", // Name 1¡¾Ãû×Ö1¡¿  
-     "JoinBytes": "AQtUZXJyYXJpYTE5NA==",//¡¾¼ÓÈë´úÂë£¬£¡²»Òª¸´ÖÆ´Ë´¦µÄ´úÂë£¬Ê¹ÓÃ×Ô¶¯Éú³ÉµÄ´úÂë£¡¡¿
-     "Servers": [//¡¾Ö÷»ú±ØÐëÌîÐ´¡¿  
+     "Host": true,//ã€æ˜¯å¦ä¸ºä¸»æœºã€‘  
+     "Key": "kisvK7HS+svZVdlzan4RZ072OdC1gNpIoOy56Uao6ZU=", // Key 1, random generatedã€å¯†é’¥1ï¼Œéšæœºç”Ÿæˆã€‘
+     "Name": "wrapper", // Name 1ã€åå­—1ã€‘  
+     "JoinBytes": "AQtUZXJyYXJpYTE5NA==",//ã€åŠ å…¥ä»£ç ï¼Œï¼ä¸è¦å¤åˆ¶æ­¤å¤„çš„ä»£ç ï¼Œä½¿ç”¨è‡ªåŠ¨ç”Ÿæˆçš„ä»£ç ï¼ã€‘
+     "Servers": [//ã€ä¸»æœºå¿…é¡»å¡«å†™ã€‘  
         {
-          "Address": "127.0.0.1",//¡¾IPµØÖ·¡¿
-          "Port": 7776,//¡¾¶Ë¿Ú¡¿
-          "Name": "wrapper",//¡¾Ãû³Æ¡¿
-          "Permission": "",//¡¾¼ÓÈëËùÐèµÄÈ¨ÏÞ¡¿
-          "OnEnter": [],//¡¾ÕâÀï²»ÓÃ¹Ü¡¿
-          "OnLeave": [],//¡¾Í¬ÉÏ¡¿
-          "GlobalCommands": [//¡¾ÓÉÖ÷»ú´¦ÀíµÄÃüÁî¡¿
+          "Address": "127.0.0.1",//ã€IPåœ°å€ã€‘
+          "Port": 7776,//ã€ç«¯å£ã€‘
+          "Name": "wrapper",//ã€åç§°ã€‘
+          "Permission": "",//ã€åŠ å…¥æ‰€éœ€çš„æƒé™ã€‘
+          "OnEnter": [],//ã€è¿™é‡Œä¸ç”¨ç®¡ã€‘
+          "OnLeave": [],//ã€åŒä¸Šã€‘
+          "GlobalCommands": [//ã€ç”±ä¸»æœºå¤„ç†çš„å‘½ä»¤ã€‘
             "world",
             "who"
           ],
-          "SpawnX": 1000,¡¾Éú³É×ø±êx¡¿
-          "SpawnY": 300,¡¾Éú³É×ø±êy¡¿
-          "Key": "kisvK7HS+svZVdlzan4RZ072OdC1gNpIoOy56Uao6ZU="¡¾¼ÓÈëÃÜÔ¿¡¿
+          "SpawnX": 1000,ã€ç”Ÿæˆåæ ‡xã€‘
+          "SpawnY": 300,ã€ç”Ÿæˆåæ ‡yã€‘
+          "Key": "kisvK7HS+svZVdlzan4RZ072OdC1gNpIoOy56Uao6ZU="ã€åŠ å…¥å¯†é’¥ã€‘
         },
         {
           "Address": "127.0.0.1",
